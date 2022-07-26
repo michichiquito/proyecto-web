@@ -1,0 +1,466 @@
+.padre {
+  text-align: center;
+  top: 60%;
+  margin-top: -205px;
+  left: -20px;
+  position: relative;
+
+}
+
+body {
+  font-family: "Impact", cursive;
+  background: #fff3cf;
+  background-image: url("https://i.postimg.cc/sD2v63JY/patitas.png");
+  background-size: 280px;
+
+}
+h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 5px;
+  top: 55%;
+  position: absolute;
+  margin-top: -350px;
+  text-shadow: -1px -1px 0px #ffa75f, 3px 3px 0px #ffd78a, 6px 6px 0px #ff835f;
+}
+
+.modal-button {
+  color: var(--main-color);
+  display: inline-block;
+  padding: 1px 15px;
+
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 143px;
+  border: none;
+  margin: 50px;
+  background-color: rgb(0, 9, 0, 0);
+  color: #ff835f;
+  font-size: 20px;
+  font-family: Chalkboard;
+  font-weight: bold;
+  transition: 1s;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(-150%) rotate(180deg) scale(0);
+  transition: 0.8s ease;
+}
+
+#modal-button {
+  display: none;
+}
+
+#modal-button:checked ~ .modal {
+  transform: translateY(0);
+}
+
+.modal-button-close {
+  position: absolute;
+  right: 0;
+  top: 5;
+  color: #ff835f;
+  font-color: white;
+}
+
+.modal-inner {
+  background: var(--main-color);
+  width: 60%;
+  height: 60%;
+  position: relative;
+  color: white;
+  font-size: 120%;
+  font-family: jokerman;
+}
+
+.modal-button:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  left: -300px;
+  top: 70%;
+  width: 500px;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  background: linear-gradient(
+    136deg,
+    #f5bb43 0%,
+    #ff7d5f 50%,
+    #ffb55f 50%,
+    #f5bb43 100%
+  );
+}
+.modal-button:hover:after {
+  left: 0px;
+  opacity: 2;
+}
+.modal-button:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #ffb55f;
+  -moz-box-shadow: 0px 0px 10px 1px #ffb55f;
+  box-shadow: 0px 0px 10px 1px #ffb55f;
+  padding: 0.5em 0.8em;
+}
+
+body {
+  padding: 30px;
+}
+
+button {
+  color: var(--main-color);
+  display: inline-block;
+  padding: 5px 15px;
+
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 160px;
+  border: none;
+  margin: 90px;
+  cursor: pointer;
+
+  background-color: rgb(0, 9, 0, 0);
+  color: #ff835f;
+  font-size: 20px;
+  font-family: Chalkboard;
+  font-weight: bold;
+  transition: 1s;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  left: -300px;
+  top: 70%;
+  width: 500px;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  background: linear-gradient(
+    136deg,
+    #f5bb43 0%,
+    #ff7d5f 50%,
+    #ffb55f 50%,
+    #f5bb43 100%
+  );
+}
+button:hover:after {
+  left: 0px;
+  opacity: 1;
+}
+button:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #ffb55f;
+  -moz-box-shadow: 0px 0px 10px 1px #ffb55f;
+  box-shadow: 0px 0px 10px 1px #ffb55f;
+  padding: 0.5em 0.8em;
+}
+
+.contenedor {
+  position: relative;
+  height: 300px;
+  width: 290px;
+  margin: -40px 110px;
+  float: left;
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+.section-fluid-main {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: calc(100% - 40px);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding: 100px 0;
+  top: -160px;
+}
+.section-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.section-row:hover .section-col {
+  opacity: 0.1;
+}
+.section-col {
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  transition: opacity 250ms linear;
+}
+.section-row .section-col:hover {
+  opacity: 1;
+}
+.section {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+}
+.section-in {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.section-in img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 250ms linear;
+}
+.section-col:hover .section-in img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.hover-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  mix-blend-mode: difference;
+}
+.hover-text h2 {
+  font-family: "Chalkboard", sans-serif;
+  font-weight: 800;
+  font-size: 8vw;
+  line-height: 1;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 250ms linear, opacity 250ms ease;
+}
+.section-col:hover + .hover-text h2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 767px) {
+  .section-col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hover-text h2 {
+    font-size: 12vw;
+  }
+}
+
+.tabset {
+  max-width: 90em;
+  text-align: center;
+}
+
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 30px/1.6em "Chalkboard", "Open Sans";
+  color: #f5872e;
+  font-weight: 200;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 2px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 15px;
+  width: 60px;
+  height: 4px;
+  background: #f5762e;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: yellowgreen;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: yellowgreen;
+}
+
+.tabset > input:checked + label {
+
+  border-bottom: 5px solid yellow;
+  margin-bottom: -6px;
+}
+
+.tab-panel {
+  padding: 50px;
+  border-top: 3px solid #d39e69;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+  display: inline-block;
+  border: 0px;
+  position: relative;
+  font-family: Chalkboard;
+  font-size: 20px;
+  color: white;
+}
+figcaption {
+  display: none;
+  background: #b5c279;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 30%;
+  padding: -1%;
+}
+figure:hover figcaption {
+  display: block;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: -107px;
+  top: 60px;
+}
+
+.video {
+  top: 60px;
+  position: absolute;
+  left: 230px;
+}
+
+.foto {
+  top: 470px;
+  position: absolute;
+  left: 86px;
+}
